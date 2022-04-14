@@ -1,4 +1,7 @@
 import React from 'react'
+import FacebokIcon from './Icons/FacebokIcon'
+import GithubIcon from './Icons/GithubIcon'
+import LinkedinIcon from './Icons/LinkedinIcon'
 import styles from './signup.module.css'
 
 function SignUp() {
@@ -15,10 +18,12 @@ function SignUp() {
                 <div className={styles.rightside}>
                     <div className={styles.rightsidecontent}>
                         <h1 className={styles.rightsidetitle}>Hesap Oluştur</h1>
-                        <div className={styles.links}>Links</div>
-                        <p className={styles.socialtext}>veya kayıt içi n e-mailini kullan</p>
+                        <div className={styles.links}><LinkedinIcon /><FacebokIcon /><GithubIcon /></div>
+                        <p className={styles.socialtext}>veya kayıt için E-Mailini kullan</p>
                         <form className={styles.form}>
-                            Form
+                            <input className={styles.inputs} type="text" placeholder='Ad' autocomplete="new-password" />
+                            <input className={styles.inputs} type="email" placeholder='E-Posta'  autocomplete="new-password"/>
+                            <input className={styles.inputs} type="password" placeholder='Şifre' autocomplete="new-password" />
                         </form>
                     </div>
                 </div>
