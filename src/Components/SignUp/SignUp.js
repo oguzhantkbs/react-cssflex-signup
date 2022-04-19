@@ -22,8 +22,9 @@ function SignUp() {
                         <p className={styles.socialtext}>veya kayıt için E-Mailini kullan</p>
                         <form className={styles.form}>
                             <input className={styles.inputs} type="text" placeholder='Ad' autocomplete="new-password" />
-                            <input className={styles.inputs} type="email" placeholder='E-Posta'  autocomplete="new-password"/>
+                            <input className={styles.inputs} type="email" placeholder='E-Posta' autocomplete="new-password" />
                             <input className={styles.inputs} type="password" placeholder='Şifre' autocomplete="new-password" />
+                            <button className={styles.formbutton}>kayıt ol</button>
                         </form>
                     </div>
                 </div>
